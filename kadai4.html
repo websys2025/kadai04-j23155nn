@@ -38,14 +38,14 @@
                     // 配列の内容を項目毎に出力
                     // 課題4-1. ここにコードを書く
                      for (let i = 0; i < list.length; i++) {
-                         console.log(" "+list[i].name+" ");
+                         for (let i = 0; i < list.length; i++) {
                          console.log("商品番号: " + list[i].id);
-                        console.log("商品名: " + list[i].name);
-                        console.log("価格: " + list[i].price + "円");
-                        console.log("在庫数: " + list[i].stock + "個");
-                        console.log(""); // 空行の出力
+                         console.log("商品名: " + list[i].name);
+                         console.log("価格: " + list[i].price + "円");
+                         console.log("在庫数: " + list[i].stock + "個\n");
+                         console.log(""); // 空行の出力
                 }
-                
+                     }
                 // 商品購入の関数
                 buyItem() {          
                     if (this.stock >= 1) { 
