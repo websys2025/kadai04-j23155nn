@@ -46,6 +46,7 @@
                          console.log(""); // 空行の出力
                 }
                      }
+                }
                 // 商品購入の関数
                 buyItem() {          
                     if (this.stock >= 1) { 
@@ -62,8 +63,8 @@
         }
                     } else console.log(this.name+"は商品の在庫がないため購入できません。");
                 }
-            } // End of Item class
-
+             // End of Item class
+            }
             // 商品テーブルのエレメント抽出
             const itemArea = document.getElementById("item_area");
             itemArea.innerHTML += "<tr><th>商品名</th><th>金額</th><th>在庫数</th><th>購入</th></tr>";
